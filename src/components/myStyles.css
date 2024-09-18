@@ -10,10 +10,10 @@
   flex: 0.3;
   display: flex;
   flex-direction: column;
+  border-right: 0.2px solid rgb(218, 218, 218);
 }
 
 .chatarea-container {
-  background-color: aliceblue;
   flex: 0.7;
 }
 
@@ -38,8 +38,9 @@
 .search-box {
   outline-width: 0;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-left: 10px;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .sb-conversations {
@@ -104,17 +105,82 @@
 .chatarea-container {
   display: flex;
   flex-direction: column;
+  flex: 0.7;
 }
 
 .chatarea-header {
-  background-color: orange;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 20px;
 }
 
-.chatarea-main {
-  background-color: blue;
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   flex: 1;
 }
 
+.chatarea-main {
+  flex: 1;
+  background-color: white;
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 20px;
+  overflow: scroll;
+}
+
 .chatarea-textinput {
-  background-color: green;
+  background-color: white;
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.othermsg-container {
+  padding: 10px 10px;
+  margin: 5px;
+  border-radius: 20px;
+  width: max-content;
+  margin-top: 10px;
+}
+
+.other-text {
+  padding: 10px 10px;
+  margin: 5px;
+  border-radius: 20px;
+  width: max-content;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+}
+
+.selfmsg-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #63d7b0;
+  width: max-content;
+  padding: 10px 10px;
+  margin: 5px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.self-timestamp {
+  align-self: flex-end;
+  font-size: 0.75rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
 }
