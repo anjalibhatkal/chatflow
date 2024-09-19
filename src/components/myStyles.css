@@ -134,6 +134,10 @@
   overflow: scroll;
 }
 
+.chatarea-main::-webkit-scrollbar {
+  display: none;
+}
+
 .chatarea-textinput {
   background-color: white;
   padding: 10px 10px;
