@@ -8,8 +8,11 @@ import NightlightIcon from "@mui/icons-material/Nightlight";
 import SearchIcon from "@mui/icons-material/Search";
 import { IconButton } from "@mui/material";
 import ConversationsItem from "./ConversationsItem";
+import { useNavigate } from "react-router-dom";
 
 function Sidebar() {
+  const navigate = useNavigate();
+
   const [convos, setConvos] = useState([
     { name: "Anjali", lastMessage: "hello", timeStamp: "Today" },
     { name: "Devansh", lastMessage: "heyy", timeStamp: "Today" },
@@ -25,13 +28,25 @@ function Sidebar() {
           </IconButton>
         </div>
         <div>
-          <IconButton>
+          <IconButton
+            onClick={() => {
+              navigate("users");
+            }}
+          >
             <PersonAddIcon />
           </IconButton>
-          <IconButton>
+          <IconButton
+            onClick={() => {
+              navigate("groups");
+            }}
+          >
             <GroupAddIcon />
           </IconButton>
-          <IconButton>
+          <IconButton
+            onClick={() => {
+              navigate("create-groups");
+            }}
+          >
             <AddCircleIcon />
           </IconButton>
           <IconButton>
