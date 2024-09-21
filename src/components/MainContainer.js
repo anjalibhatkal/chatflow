@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar";
 import ChatArea from "./ChatArea";
 import CreateGroups from "./CreateGroups";
 import Welcome from "./Welcome";
+import OnlineUsers from "./OnlineUsers";
 
 function MainContainer() {
   const [convos, setConvos] = useState([
@@ -14,8 +15,9 @@ function MainContainer() {
     <div className="main-container">
       <Sidebar />
       {/* <Welcome /> */}
-      <CreateGroups />
-      {/* <ChatArea props={convos[0]} />; */}
+      {/* <CreateGroups /> */}
+      {/* <ChatArea props={convos[0]} /> */}
+      <OnlineUsers />
     </div>
   );
 }
