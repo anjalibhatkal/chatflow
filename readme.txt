@@ -11,3 +11,11 @@ Features of the app
 frontend - reactjs, react router, redux, materialui, motion
 backend - nodejs, expressjs, axios, socket.io
 database - mongodb atlas
+
+Routes
+1. Login Page
+2. Welcome Page
+3. ChatArea
+4. Online Users
+5. Available Groups
+6. Create Group
