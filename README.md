@@ -1,4 +1,4 @@
-Full-Stack Chat Application
+Full-Stack Chat Application - 
 A real-time chat application built with modern web technologies, supporting features like one-to-one and group messaging, file sharing, theme toggling, user availability, and more.
 
 Features
