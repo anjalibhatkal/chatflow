@@ -1,3 +1,27 @@
+.dark {
+  background-color: #2d3941 !important;
+  color: whitesmoke !important;
+}
+
+.dark-outer {
+  background-color: #192024 !important;
+  color: whitesmoke !important;
+}
+
+.dark-outermost {
+  background-color: #0c0f11 !important;
+}
+
+.msgself-dark {
+  background-color: #009f6d !important;
+  color: #0c0f11 !important;
+}
+
+.icon {
+  width: 1.2em !important;
+  height: 1.2em !important;
+}
+
 .main-container {
   background-color: #f4f5f8;
   height: 90vh;
@@ -163,6 +187,8 @@
 }
 
 .othermsg-container {
+  display: flex;
+  gap: 5px;
   padding: 10px 10px;
   margin: 5px;
   border-radius: 20px;
